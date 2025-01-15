@@ -198,7 +198,7 @@ function! s:PHPCustomFolds() " {{{
 	call s:PHPFoldProperties('^\s*define\s*(', ";", s:FOLD_WITH_PHPDOC)
 
 	" Fold consts with their PhpDoc
-	call s:PHPFoldProperties('^\s*const\s\+', ";", s:FOLD_WITH_PHPDOC)
+	call s:PHPFoldProperties('^\(public\|private\|protected\|static\|\s\)*const\s\+', ";", s:FOLD_WITH_PHPDOC)
 
 	" Fold includes with their PhpDoc
 	call s:PHPFoldProperties('^\s*require\s*', ";", s:FOLD_WITH_PHPDOC)
